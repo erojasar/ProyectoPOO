@@ -190,7 +190,7 @@ public class LoopJuego extends AnimationTimer implements Runnable{
                 Logger.getLogger(LoopJuego.class.getName()).log(Level.SEVERE, null, ex);
             }
         }else if((this.nivel.cambiarNivel())&&(this.numNivel==3)){
-            
+            archivo.guardar(this.puntaje);
             ControladorVentanaGanador controlador;
             try {
                 controlador = new ControladorVentanaGanador();
